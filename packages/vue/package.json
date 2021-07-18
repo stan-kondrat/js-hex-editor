@@ -1,0 +1,7 @@
+{
+  "name": "vue-hex-editor",
+  "license": "ISC",
+  "scripts": {
+    "build": "echo 'build vue-hex-editor'"
+  }
+}

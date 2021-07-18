@@ -1,0 +1,8 @@
+{
+  "name": "angular-hex-editor",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo 'all package-a tests passed!'",
+    "build": "echo 'build angular-hex-editor'"
+  }
+}

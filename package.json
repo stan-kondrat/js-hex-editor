@@ -1,0 +1,11 @@
+{
+  "name": "js-hex-editor-workspace",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clear": "for x in node_modules dist ; do find . -name $x -type d -prune -exec rm -rf '{}' + ; done"
+  }
+}
