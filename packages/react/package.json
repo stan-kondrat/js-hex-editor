@@ -1,5 +1,6 @@
 {
   "name": "hex-editor-react",
+  "version": "0.1.0",
   "license": "ISC",
   "scripts": {
     "test": "echo 'all package-a tests passed!'",

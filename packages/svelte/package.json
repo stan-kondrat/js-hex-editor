@@ -1,9 +1,7 @@
 {
   "name": "js-hex-editor",
-  "description": "",
   "version": "0.1.0",
   "license": "GPL-3.0",
-  "private": true,
   "homepage": "https://github.com/stan-kondrat/js-hex-editor#readme",
   "repository": {
     "type": "git",
@@ -12,9 +10,6 @@
   "bugs": {
     "url": "https://github.com/stan-kondrat/js-hex-editor/issues"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "keywords": [
     "svelte"
   ],
@@ -22,12 +17,10 @@
     "src",
     "dist"
   ],
-  "svelte": "src/Component.svelte",
+  "svelte": "src/HexEditor.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build",
     "build": "rollup -c",
     "start": "rollup --watch --config rollup.config.js"
   },
