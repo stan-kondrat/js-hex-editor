@@ -1,7 +1,9 @@
 import * as React from "react";
 
-import JsHexEditor from "js-hex-editor";
+import {HexEditor as JsHexEditor} from "js-hex-editor";
 import type { HexEditorProps as JsHexEditorProps } from "js-hex-editor";
+
+import 'js-hex-editor/dist/hex-editor.css'
 
 export type HexEditorProps = JsHexEditorProps;
 

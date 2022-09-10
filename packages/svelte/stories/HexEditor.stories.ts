@@ -1,7 +1,4 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import { HexEditor, HexEditorProps } from "hex-editor-react/src/index";
+import { HexEditor, HexEditorProps } from '../src/index';
 
 export default {
   title: "HexEditor/Examples",
@@ -18,13 +15,14 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof HexEditor>;
+};
 
-const Template: ComponentStory<typeof HexEditor> = (args) => (
-  <HexEditor {...args} />
-);
+const Template = (args) => ({
+  Component: HexEditor,
+  props: args,
+});
 
-const data = (length: number) => {
+const data = (length) => {
   var array = new Uint8Array(length);
   window.crypto.getRandomValues(array);
   return array;

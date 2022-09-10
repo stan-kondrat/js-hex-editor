@@ -1,7 +1,7 @@
-import HexEditor from "./HexEditor.svelte";
-import type { NumberBase } from "./NumberBase";
+export { default as HexEditor } from "./HexEditor.svelte";
+import { NumberBase as _NumberBase } from "./NumberBase";
 
-export default HexEditor;
+export const NumberBase = _NumberBase;
 
 export interface HexEditorProps
   extends Partial<{
@@ -11,8 +11,8 @@ export interface HexEditorProps
     showFooter: boolean;
     height: string;
     width: string;
-    offsetBase: NumberBase;
-    dataBase: NumberBase;
+    offsetBase: _NumberBase;
+    dataBase: _NumberBase;
     bytesPerLine: number;
     start: number;
     end: number;

@@ -1,13 +1,15 @@
 # JS HEX Editor
 
 ```sh
-npm i
+npm run clear
 
-npm run build --workspaces
+npm ci
 
-npm run build -w js-hex-editor
-npm run build -w hex-editor-react
-npm run build -w storybook
 
-npm run start -w storybook
+npm run build -- --workspace=js-hex-editor
+npm run build -- --workspace=hex-editor-react
+npm run build -- --workspace=angular-hex-editor
+npm run build -- --workspace=vue-hex-editor
+
+npm run start -- --workspace=js-hex-editor
 ```

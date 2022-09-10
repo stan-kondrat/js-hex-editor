@@ -10,9 +10,12 @@
     "strict": false,
     "esModuleInterop": false,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist-svelte",
+    "rootDir": "./src",
+    "declaration": true
   },
 
-  "include": ["src/**/*", "global.d.ts", "stories/**/*", ],
+  "include": ["src/**/*", "global.d.ts"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }
