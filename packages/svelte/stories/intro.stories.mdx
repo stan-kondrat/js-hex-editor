@@ -1,5 +1,66 @@
-import { Meta } from "@storybook/addon-docs";
+import { Meta, Source } from "@storybook/addon-docs";
+
+
 
 <Meta title="HexEditor/Docs" />
 
 # JS HexEditor Component
+
+
+## React
+
+```sh
+npm i hex-editor-react
+```
+
+```jsx
+import React from "react";
+import { HexEditor } from "hex-editor-react";
+import "hex-editor-react/dist/hex-editor.css";
+
+export default function App() {
+  return (
+    <div className="App">
+      <HexEditor />
+    </div>
+  );
+}
+
+```
+https://codesandbox.io/s/hex-editor-react-ukl4zz?file=/src/App.js
+
+
+
+## Plain html
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://unpkg.com/js-hex-editor@0.1.0/dist/hex-editor.css" rel="stylesheet" />
+    <script src="https://unpkg.com/js-hex-editor@0.1.0/dist/hex-editor.min.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+      #editor {
+        max-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="editor"></div>
+    <script type="text/javascript">
+      const target = document.getElementById("editor");
+      const context = new Map();
+      const props = {};
+
+      const hexEditor = new JsHexEditor.HexEditor({ context, target, props });
+
+      hexEditor.$set({ bytesPerLine: 8 });
+    </script>
+  </body>
+</html>
+```
+https://codesandbox.io/s/js-hex-editor-x93664?file=/index.html
